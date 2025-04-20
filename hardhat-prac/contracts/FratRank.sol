@@ -15,7 +15,6 @@ contract FratRank {
     constructor() {
         owner = msg.sender;
 
-        // Initialize default frats
         string[7] memory initialFrats = ["Pike", "KA", "ATO", "Phi Psi", "PKS", "Phi Tau", "Fiji"];
         for (uint i = 0; i < initialFrats.length; i++) {
             string memory frat = initialFrats[i];

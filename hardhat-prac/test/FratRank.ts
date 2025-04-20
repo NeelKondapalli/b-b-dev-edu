@@ -24,7 +24,7 @@ describe("FratRank", function () {
     it("Should initialize default frats", async function () {
       const { contract } = await deployFratRankFixture();
       const allVotes = await contract.getVotes();
-      expect(allVotes[0].length).to.be.greaterThan(0); // frat names exist
+      expect(allVotes[0].length).to.be.greaterThan(0);
     });
   });
 
