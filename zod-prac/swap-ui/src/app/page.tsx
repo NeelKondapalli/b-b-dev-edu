@@ -62,7 +62,7 @@ export default function HomePage() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-purple-900 to-black text-white p-4">
+    <main className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-purple-900 to-black text-white p-4">
       <div className="container max-w-md mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-purple-400 mb-2">SwapEx</h1>
@@ -129,6 +129,7 @@ export default function HomePage() {
                             <FormItem>
                               <FormControl>
                                 <Input
+                                  type="number"
                                   placeholder="0.0"
                                   {...field}
                                   className="bg-gray-700 border-gray-600 text-white placeholder:text-gray-500 focus:border-purple-500"
@@ -197,6 +198,7 @@ export default function HomePage() {
                             <FormItem>
                               <FormControl>
                                 <Input
+                                  type="number"
                                   placeholder="0.0"
                                   {...field}
                                   className="bg-gray-700 border-gray-600 text-white placeholder:text-gray-500 focus:border-purple-500"
@@ -252,6 +254,7 @@ export default function HomePage() {
                           <FormControl>
                             <div className="relative">
                               <Input
+                                type="number"
                                 {...field}
                                 className="bg-gray-800 border-gray-700 text-white pr-8 focus:border-purple-500"
                               />
@@ -274,7 +277,7 @@ export default function HomePage() {
           </CardContent>
           <CardFooter className="border-t border-purple-900/50 pt-4 text-xs text-gray-500 flex justify-between">
             <span>On the ETH Chain</span>
-            <Link href="/transactions" className="text-purple-400 hover:text-purple-300">
+            <Link href="/" className="text-purple-400 hover:text-purple-300">
               View Transactions
             </Link>
           </CardFooter>
